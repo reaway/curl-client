@@ -1,0 +1,15 @@
+# 表示这是根配置文件，停止向上查找其他 .editorconfig 文件
+root = true
+
+# 对所有文件生效
+[*]
+charset = utf-8                    # PHP标准编码
+end_of_line = lf                   # Unix风格换行符（符合PSR-12）
+indent_size = 4                    # 4空格缩进（PSR-12 要求）
+indent_style = space               # 使用空格而非Tab
+insert_final_newline = true        # 文件末尾必须有空行（PSR-12要求）
+trim_trailing_whitespace = true    # 自动去除行尾空格
+
+# Markdown 文件
+[*.md]
+trim_trailing_whitespace = false   # Markdown需要保留行尾空格（用于换行）
